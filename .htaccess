@@ -1,4 +1,9 @@
 # Settings to block config files and git from the internet
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT,L]
+
 RedirectMatch 403 /\.apache2
 RedirectMatch 403 /\.mysql
 RedirectMatch 403 /\.mysql_history

@@ -1,0 +1,315 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+body
+{
+	padding: 0px;
+	font-family: tahoma;
+	font-size: 12px;
+	background: #151515;
+	font: 'Tahoma';
+	color: black;
+}
+
+.wrapper
+{
+	width: 960px;
+	margin: auto;
+	padding: 15px;
+	border-left: 5px solid #ececec;
+	border-right: 5px solid #ececec;
+	background: white;
+}
+
+.clear {
+	clear: both;
+}
+
+.btn a img { 
+	border-bottom: 3px solid black;
+	float: right;
+	margin-top: 40px;
+}
+.btn a:hover img {
+	border-bottom: 3px solid #f8a31f;
+	float: right;
+	margin-top: 40px;
+}
+
+#features{
+	width: 955px;
+	height: 355px;
+	overflow: hidden;
+}
+
+
+#welcome {
+	height: 320px;
+	width: 955px;
+	background: url('images/welcome_bg.gif');
+}
+#welcome .left {
+	width: 570px;
+	padding: 20px;
+}
+
+h2 {
+	font: normal 24px/120% 'Cinzel Decorative', Tahoma;
+}
+
+.selected { border-bottom: 3px solid #f8a31f; }
+
+#header {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+#menu {
+	float: right;
+	margin: 110px 0px 0px;
+}
+#menu li {
+	float: left;
+}
+#menu .separator{
+	padding: 15px;
+}
+#menu li a {
+	padding: 10px 10px;
+	font: normal 16px/120% 'Cinzel Decorative', Tahoma;
+	color: #151515;
+}
+#menu li .cold { color: #368ee0; }
+.warm { color: #f8a31f; }
+.hot { color: #e51400; }
+.shade { color: gray;}
+
+#menu li a:hover {
+	background: #151515;
+	color: white;
+}
+#content {
+	padding: 20px 0px;
+}
+#left {
+	float: left;
+	width: 495px;F
+} 
+#right {
+	float: right;
+	width: 450px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+#selection td {
+	padding: 5px;
+}
+
+#selection select {
+	padding: 5px;
+	width: 375px;
+}
+
+#selection input {
+	margin-left: 20px;
+}
+#selection .first {
+	margin-left: 0px;
+}
+
+/* CALENDAR */ 
+
+#move { position:absolute; }
+
+#calendar-container #prev { float: left; }
+#calendar-container #next { float: right; }
+
+#calendar #title
+{
+	font-family: 'Tahoma';
+	font-size: 26px;
+	color: #fcf7cd;
+}
+#move { padding: 8px; }
+#calendar
+{
+	background: #142127;
+	position: absolute;
+	width: 500px;
+	height: 470px;
+	overflow: hidden;
+	margin-top: -10px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: white;
+}
+.weeks li
+{
+	font: bold 15px/120% 'Trebuchet MS';
+	padding: 10px 0px;
+	float: left;
+	width: 68.15px;
+	margin-right: 1px;
+	text-align: center;
+	list-style: none;
+	border-bottom: 1px solid #142127;
+}
+
+.days .daynum
+{
+	font: bold 15px/120% 'Trebuchet MS';
+	list-style: none;
+	float: left;
+	padding: 9px;
+	margin: 1px;
+	width: 48px;
+	height: 40px;
+	text-align: center;
+	border-left: 1px solid #142127;
+	border-bottom: 1px solid #142127;
+
+	display: block;
+	background: #294550;
+	color: white;
+
+	font-weight: bold;
+	font-size: 16px;
+
+	cursor: pointer;
+}
+
+.days .daynum i
+{
+	position: relative;
+	top: 3px;
+	font-size: 10px;
+}
+
+.days .nodays
+{
+	list-style: none;
+	float: left;
+	padding: 10px;
+	width: 48px;
+	height: 40px;
+	text-align: center;
+	border-left: 1px solid #142127;
+	border-bottom: 1px solid #142127;
+	color: #555;
+	font-weight: bold;
+	font-size: 11px;
+	color: #ccc;
+	cursor: no-drop;
+}
+
+.months
+{
+	width: 100%;
+	float: left;
+	padding-bottom: 15px;
+}
+
+.days li:nth-child(7), .days li:nth-child(14), .days li:nth-child(21), .days li:nth-child(28), .days li:last-child, .days li:nth-child(35)
+{
+	border-right: 1px solid #142127;
+	border-bottom: 1px solid #142127;
+}
+.days .highlight
+{
+	background: #417081;
+	background-size: 100% 100%;
+	color: #fee;
+	text-shadow: 1px 1px #111;
+}
+
+
+/* FANCYBOX */
+
+#right #fancybox
+{
+	'position: absolute;
+}
+
+#right #fancybox li
+{
+	list-style: none;
+	float: left;
+	padding: 2px 2px 0px;
+}
+
+#right #fancybox ul
+{
+	display: none;
+}
+
+#right #fancybox ul li a img {
+	width: 144px;
+}
+
+/* FACILITIES */
+#facilities {
+	border-top: 1px solid #d6d3d0;
+	border-bottom: 1px solid #d6d3d0;
+	margin-top: 20px;
+}
+#facilities li {
+	float: left;
+	border-left: 1px solid #d6d3d0;
+	padding: 0px 25px;
+}
+#facilities li h2 {
+	margin-bottom: 10px;
+}
+
+#facilities .first {
+	padding-left: 0px;
+	border: none;
+}
+#facilities .last {
+	padding-right: 0px;
+}
+#facilist li {
+	float: left;
+	list-style-type: disc;
+	margin-left: 30px;
+	font: normal 12px/180% 'Verdana';
+}
+
+/* GALLERY */
+
+#content .left select {
+	width: 165px;
+	padding: 5px;
+	margin: 20px 0px 20px;
+}
+#content .right #fullview {
+	margin: 20px 0px 10px;
+}
+
+/* FOOTER */
+
+#footer 
+{
+	background: #ececec;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0px;
+}
+#footer h2 {
+	font-size: 16px;
+}

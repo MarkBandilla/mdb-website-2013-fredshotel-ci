@@ -1,0 +1,251 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+body
+{
+	padding: 0px;
+	font-family: tahoma;
+	font-size: 12px;
+	background: #151515;
+	font: 'Tahoma';
+	color: black;
+}
+
+.wrapper
+{
+	width: 960px;
+	margin: auto;
+	padding: 15px;
+	border-left: 5px solid #ececec;
+	border-right: 5px solid #ececec;
+	background: white;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+#header {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+
+#menu {
+	float: right;
+	margin: 110px 0px 0px;
+}
+#menu li {
+	float: left;
+}
+#menu .separator{
+	padding: 15px;
+}
+#menu li a {
+	padding: 10px 10px;
+	font: normal 18px/120% 'Tahoma';
+	color: #151515;
+}
+#menu li .cold { color: #368ee0; }
+.warm { color: #f8a31f; }
+.hot { color: #e51400; }
+.shade { color: gray;}
+
+#menu li a:hover {
+	background: #151515;
+	color: white;
+}
+#content {
+	padding: 20px 0px;
+}
+#left {
+	float: left;
+	width: 495px;F
+} 
+#right {
+	float: right;
+	width: 450px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+#selection td {
+	padding: 5px;
+}
+
+#selection select {
+	padding: 5px;
+	width: 375px;
+}
+
+#selection input {
+	margin-left: 20px;
+}
+#selection .first {
+	margin-left: 0px;
+}
+
+/* CALENDAR */ 
+
+#move { position:absolute; }
+
+#calendar-container #prev { float: left; }
+#calendar-container #next { float: right; }
+
+#calendar #title
+{
+	font-size: 18px;
+}
+#calendar
+{
+	position: absolute;
+	width: 520px;
+	height: 315px;
+	overflow: hidden;
+	margin-top: -10px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.weeks li
+{
+	margin-top: 10px;
+	float: left;
+	width: 68.15px;
+	margin-right: 1px;
+	text-align: center;
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.days .daynum
+{
+	list-style: none;
+	float: left;
+	padding: 10px;
+	width: 48px;
+	height: 23px;
+	text-align: center;
+	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eeeeee), to(#dedede));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #eeeeee, #dedede);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, ##eeeeee, #dedede);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #eeeeee, #dedede);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #eeeeee, #dedede);
+
+	color: #555;
+	text-shadow: 1px 1px #fff;
+	font-weight: bold;
+	font-size: 11px;
+
+	cursor: pointer;
+}
+
+.days .daynum i
+{
+	position: relative;
+	top: 3px;
+	font-size: 10px;
+}
+
+.days .nodays
+{
+	list-style: none;
+	float: left;
+	padding: 10px;
+	width: 48px;
+	height: 23px;
+	text-align: center;
+	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	color: #555;
+	font-weight: bold;
+	font-size: 11px;
+	color: #ccc;
+	cursor: no-drop;
+}
+
+.months
+{
+	width: 100%;
+	float: left;
+}
+
+.days li:nth-child(7), .days li:nth-child(14), .days li:nth-child(21), .days li:nth-child(28), .days li:last-child, .days li:nth-child(35)
+{
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+.days .highlight
+{
+	background: url('images/gradient_blue.png');
+	background-size: 100% 100%;
+	color: #fee;
+	text-shadow: 1px 1px #111;
+}
+
+
+/* FANCYBOX */
+
+#right #fancybox
+{
+	'position: absolute;
+}
+
+#right #fancybox li
+{
+	list-style: none;
+	float: left;
+	padding: 2px 2px 0px;
+}
+
+#right #fancybox ul
+{
+	display: none;
+}
+
+#right #fancybox ul li a img {
+	width: 144px;
+}
+
+/* GALLERY */
+
+#content .left select {
+	width: 165px;
+	padding: 5px;
+	margin: 20px 0px 20px;
+}
+#content .right #fullview {
+	margin: 20px 0px 10px;
+}
+
+/* FOOTER */
+
+#footer 
+{
+	background: #ececec;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0px;
+}
