@@ -1,0 +1,15 @@
+<li><a href="#" class="btn_thumb" url="../../images/full/B/B_1_full.jpg"><img src="../../images/thumb/B/B_1_thumb.jpg" /></a></li>
+<li><a href="#" class="btn_thumb" url="../../images/full/B/B_2_full.jpg"><img src="../../images/thumb/B/B_2_thumb.jpg" /></a></li>
+<li><a href="#" class="btn_thumb" url="../../images/full/B/B_3_full.jpg"><img src="../../images/thumb/B/B_3_thumb.jpg" /></a></li>
+<li><a href="#" class="btn_thumb" url="../../images/full/B/B_4_full.jpg"><img src="../../images/thumb/B/B_4_thumb.jpg" /></a></li>
+<li><a href="#" class="btn_thumb" url="../../images/full/B/B_5_full.jpg"><img src="../../images/thumb/B/B_5_thumb.jpg" /></a></li>
+<li><a href="#" class="btn_thumb" url="../../images/full/B/B_6_full.jpg"><img src="../../images/thumb/B/B_6_thumb.jpg" /></a></li>
+<script>
+$(".btn_thumb").click(function(){
+	var url = $(this).attr('url');
+	//alert(url);
+	
+	$("#fullview").attr('src',url);
+	return false;
+})
+</script>

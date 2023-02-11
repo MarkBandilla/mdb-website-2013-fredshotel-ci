@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost/2013-fredshotel-ci/baguio/page/gallery by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Feb 2023 19:51:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<link href="../../styles.css" rel="stylesheet" type="text/css" media="screen">
+	<script src="../../js/jquery-1.10.1.min.js"></script>
+	<title>Freds.com.ph - BaguioGallery</title>
+</head>
+<body>
+<div class="wrapper">
+	<div id="header">
+		<img src="../../images/logo.png" style="float: left;"/>
+		<ul id="menu">
+			<li><a href="../../baguio.html">Home</a></li>
+			<li><a class="cold selected" href="gallery.html">Facilities</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="location.html">Location</a></li>
+			<li class="separator"></li>
+			<li><a href="roomrates.html">Unit Rate</a></li>
+		</ul><!-- .menu -->
+		<div class="clear"></div>
+	</div><!-- #header -->
+		<div id="content">
+			<h2 class="warm">Facilities</h2>
+			<br>
+			<ul id="facilist">
+				<table>
+					<tr>
+					<td width=350>
+					<li>Artist - Oriented Serviced Apartments</li>
+					</td>
+					<td width=350>
+					<li>4 Bedrooms with 4 Toilets & Bats</li>
+					</td width=350>
+					<td>
+					<li>Full island kitchen + daily kitchen</li>
+					</td>
+					</tr>
+					<tr>
+					<td>
+					<li>Spacious living area</li>
+					</td>
+					<td>
+					<li>Hot & Cold Water</li>
+					</td>
+					<td>
+					<li>WiFi Ready</li>
+					</td>
+					</tr>
+					<tr>
+					<td>
+					<li>7 minutes drive to Burnham Park</li>
+					</td>
+					<td>
+					<li>Overlooking Mt. Sto. Tomas</li>
+					</td>
+					<td>
+					<li>Secured parking spaces</li>
+					</td>
+					</tr>
+					<tr>
+					<td>
+					<li>Walking distance to SM Baguio, Session Road, O Mai Khan, Forest House Restaurants</li>
+					</td>
+					<td>
+					<li>4 unit brand new modern design Serviced Apartments</li>
+					</td>
+					</tr>
+				<div class="clear"></div>
+				</table>
+			</ul>
+			<br>
+			<h2 class="warm">Gallery</h2>
+			<div class="left">
+				<select id="unit">
+					<option value="A">Unit A</option>
+					<option value="B">Unit B</option>
+					<option value="C">Unit C</option>
+					<option value="D">Unit D</option>
+				</select>
+				<ul class="thumbs">
+					
+				</ul><!-- .thumbs -->
+				
+			</div><!-- .left -->
+			<div class="right">
+				<img id="fullview" src="../../images/full/A/A_1_full.jpg" />
+			</div><!--.right -->
+			<div class="clear"></div>			
+		</div><!-- #content -->
+	<div id="footer" style="background: #ececec; text-align: center; width: 100%; padding: 20px 0px;">
+		<h2>8 Greenwater Village, Baguio City, Philippines</h2>
+	</div><!-- #footer -->
+</div><!-- .wrapper -->
+	<script>
+		$("#unit").change(function(){			
+			//alert($("#unit").val());
+			var unit = $(this).val()
+			//alert(unit);
+			
+			loadthumb(unit);
+			return false;
+		})
+		
+		function loadthumb(unit) {
+			//alert(unit);
+			switch (unit) {
+				case ("A"):
+					//alert("Unit A");
+					$(".thumbs").load('../gallery/thumb_a.html');
+				break;
+				case "B":
+					//alert("Unit B");
+					$(".thumbs").load('../gallery/thumb_b.html');
+				break;
+				case "C":
+					//alert("Unit C");
+					$(".thumbs").load('../gallery/thumb_c.html');
+				break;
+				case "D":
+					//alert("Unit D");
+					$(".thumbs").load('../gallery/thumb_d.html');
+				break;
+				default:
+					//alert("Unit A");
+					$(".thumbs").load('../gallery/thumb_a.html');
+				break;
+			}
+		}
+		loadthumb("A");
+	</script>
+</body>
+
+<!-- Mirrored from localhost/2013-fredshotel-ci/baguio/page/gallery by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Feb 2023 19:51:27 GMT -->
+</html>
+
